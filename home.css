@@ -1,0 +1,46 @@
+
+body{ background-image :url("https://www.drdo.gov.in/sites/default/files/inline-images/drdo.PNG") ;
+    background-position:center;
+    background-size:100%;
+background-repeat:no-repeat;
+margin-top:90px;}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{margin: 0px;
+padding:0px;
+box-sizing:border-box;
+font-family:"Poppins",sans-serif;}
+body{min-height:100vh;}
+
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 100px;
+    background:rgb(170,183,240, 0.7);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:100%;
+}
+
+.navbar a{font-size:18px;
+color:white;
+font-weight:500;
+text-decoration:none;
+margin-left:40px;
+}
+
+img{width:40px;}
+
+
+
+.word{font-size:100px;
+    color:rgb(48, 59, 105,0.9);
+    text-align:center;
+    margin:0 auto;}
+
+    div:hover{color:#79d4d2;}
