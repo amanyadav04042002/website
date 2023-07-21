@@ -14,7 +14,9 @@ overflow-y: hidden;
 
 }
     h1{text-align:center;
-    color:#001C30;}
+    color:#001C30;
+       text-shadow: 0.3px 0.1px ;
+}}
 
 div{
     padding:10px;
