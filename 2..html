@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="2.css">
+    <title>Centre Data</title>
+    <link rel="stylesheet" href="testing1.css">
 </head>
 <body>
     
     <sec>
-        <header class="header"><img src="https://upload.wikimedia.org/wikipedia/en/6/68/Defence_Research_and_Development_Organisation_Logo.png" class="logo">
-
-            <nav clas="navbar">
-                <a href="file:///Users/amanyadav/Documents/Code/webd/drdo/home.html">Home</a>
-                <a href="#">About</a>
-                <a href="#">Login</a>
-        
-        
-            </nav>
-        </header>
+        <div class="navbar">
+            <div class="logo">
+              <img src="https://upload.wikimedia.org/wikipedia/en/6/68/Defence_Research_and_Development_Organisation_Logo.png" alt="Logo" width="50">
+            </div>
+            <div class="nav-links">
+              <ul>
+                <li><a href="file:///Users/amanyadav/Documents/Code/webd/drdo/home.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Login">Login</a></li>
+              </ul>
+            </div>
+          </div>
         <div>
-          <form>
-            <h1>Centre Information</h1>
-            <div> <label for="1">Centre type</label>
+          <form class="centre">
+            <h1 class="head">Centre Information</h1>
+            <div > <label for="1">Centre type</label>
            
-                <select id="1">
+                <select  id="1">
                     <option value="Select" selected>----Select----</option>
                     <option value="University">University</option>
                     <option value="Coaching Institute">Coaching Institute</option>
@@ -36,13 +38,13 @@
                 </select>
             </div>
 
-           <div class="input"> <label for="2">Centre Name:</label>
+           <div class="box"> <label for="2">Centre Name:</label>
             <input type="text" placeholder="Type Centre Name here" id="2"> </div>
 
             <div > <label for="4">Centre Address:</label>
                 <input  type="text" placeholder="Write Centre address here" id="4" > </div>
              
-            <div> <label for="3">Centre Id</label>
+            <div class="box"> <label for="3">Centre Id</label>
             <input type="select" placeholder="Choose Your centre" id="3"> </div>
 
           
