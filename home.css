@@ -3,7 +3,8 @@ body{ background-image :url("https://www.drdo.gov.in/sites/default/files/inline-
     background-position:center;
     background-size:100%;
 background-repeat:no-repeat;
-margin-top:90px;}
+
+overflow-y: hidden;}
 
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
@@ -14,33 +15,113 @@ box-sizing:border-box;
 font-family:"Poppins",sans-serif;}
 body{min-height:100vh;}
 
-.header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    padding:20px 100px;
-    background:rgb(170,183,240, 0.7);
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    z-index:100%;
-}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    margin:0;
+    background-color: #7895CBc4;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height:80px;
+  }
+  
+  .logo img {
+    margin-right: 10px;
+    margin-left:20px;
+  }
+  
+  .nav-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 45px;
+  }
+  
+  .nav-links a {
+    color: #331D2C;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight:bold;
+    padding: 10px 10px; 
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s
+  }
+  
+  /* Change the color of links on hover (optional) */
+  .nav-links a:hover {
+    color: white;
+    border-bottom: 2px solid #400E32;
+    color: #fff;
+  background-color: #400E32;
+  }
+  
+  
 
-.navbar a{font-size:18px;
-color:white;
-font-weight:500;
-text-decoration:none;
-margin-left:40px;
-}
-
-img{width:40px;}
 
 
 
-.word{font-size:100px;
-    color:rgb(48, 59, 105,0.9);
-    text-align:center;
-    margin:0 auto;}
-
-    div:hover{color:#79d4d2;}
+  .middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-weight:bold;
+    font-size:30px;
+    color: #15133C; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    background-color: rgba(250, 243, 240,0.4); 
+    padding: 20px; 
+    border-radius: 10px; 
+    
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .buttons {
+    margin: 20px;
+   
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 18px 20px;
+    background-color: #42032C;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 12%;
+    cursor: pointer;
+    margin: 0 10px;
+    font-weight:bold;
+    font-size:20px;
+  }
+  
+  .button:hover {
+    background-color: #FF577F;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
