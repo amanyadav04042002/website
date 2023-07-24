@@ -26,11 +26,13 @@
             </div>
           </div>
        
-          <form>
+          <form action="/myaction.php" name="facultysubmitted" onsubmit="return validateform()" method=" post">
             <h1>Faculty Portal</h1>
-           <div class="input"> <label for="1">Faculty Name:</label>
-            <input type="text" placeholder="Type your Name here" id="1"> </div>
-             
+              
+             <div class="input" id="name"> <label for="1">Faculty Name:</label><span class="formerror"> </span>
+              <input type="text" placeholder="Type your Name here" name="fname" id="1" required>
+            </div>
+              
             <div> <label for="2">Date of Birth:</label>
             <input type="date" placeholder="dd/mm/yyyy format" id="2"> </div>
 
@@ -56,8 +58,8 @@
             <div> <label for="6">Area of speciality:</label>
             <input type="text" placeholder="Type your subjects here" id="6"> </div>
 
-            <div> <label for="7">Centre ID:</label>
-            <input type="text" placeholder="Choose Centre ID" id="7"> </div>
+            <div id="id"> <label for="7">Centre ID:</label><span class="formerror"> </span>
+            <input type="text" name="fid" placeholder="Choose Centre ID" id="7" required> </div>
 
             <div class="button"><button>Submit</button></div>
 
@@ -69,4 +71,6 @@
         </div>
     </sec>
 </body>
+    <script src="js1.js"></script>
+
 </html>
