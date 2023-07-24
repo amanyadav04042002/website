@@ -27,11 +27,6 @@ function validateform() {
         returnval = false;
     }
 
-    var cname = document.forms['facultysubmitted']["cname"].value;
-    if (isNaN(cname)) {
-        seterror("cname", "*only numerical value allowed");
-        returnval = false;
-    }
 
 
     return returnval;
