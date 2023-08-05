@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <title>Faculty Member</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Poppins:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header-wrapper">
+    <header>
+      <div id="title">
+        <span>֎</span>
+        <span><strong>faculty</strong></span>
+      </div>
+      <div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sign Out</a></li>
+        </ul>
+      </div>
+    </header>
+  </div>
+  <div id="content-wrapper">
+    <div id="content">
+      <div id="side-bar">
+        <ul>
+          <li>
+            <a href="#">
+              &#8250; Home
+            </a>
+          </li>
+          <li><a href="#">&#8250; Centres</a></li>
+          <li><a href="#">&#8250; Topics</a></li>
+          <li><a href="#">&#8250; Faculty</a></li>
+        </ul>
+      </div>
+      <div>
+        <div id="sub-title-wrapper">
+          <h3>Faculty Members</h3>
+          <a id="add-new" href="#add-new-modal">╋&nbsp;&nbsp;ADD NEW</a>
+        </div>
+        <div id="content-main">
+          <!-- <div>Some Content</div> -->
+
+          <div id="add-new-modal" class="overlay">
+            <div class="popup">
+              <h3>ADD NEW FACULTY MEMBER</h3>
+              <a class="close" href="#">&times;</a>
+              <div class="content">
+                <p>Place Form Item Here</p>
+              </div>
+              <div class="content">
+                <p>Place Form Item Here</p>
+              </div>
+              <div class="content">
+                <p>Place Form Item Here</p>
+              </div>
+              <div class="button-wrapper">
+                <button id="save-button">SAVE</button>
+                <a id="cancel-button" href="#">CANCEL</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <table id="data-table">
+              <thead>
+                <tr>
+                  <th>SN</th>
+                  <th>NAME</th>
+                  <th>MOBILE</th>
+                  <th>EMIAL</th>
+                  <th>SUBJECT</th>
+                  <th>TOOLS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Some Name One</td>
+                  <td>9876543210</td>
+                  <td>example@domain.com</td>
+                  <td>Computer Science</td>
+                  <th>
+                    <a class="edit" href="#">VIEW</a> | 
+                    <a class="edit" href="#">EDIT</a> | 
+                    <a class="delete" href="#">DEL</a>
+                  </th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Manoj Kumar Tripathi</td>
+                  <td>7641213215</td>
+                  <td>manoj.tripathi@email.com</td>
+                  <td>Soft Skills</td>
+                  <th>
+                    <a class="edit" href="#">VIEW</a> | 
+                    <a class="edit" href="#">EDIT</a> | 
+                    <a class="delete" href="#">DEL</a>
+                  </th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div>&copy; 2023 Faculty Database</div>
+    </footer>
+  </div>
+</body>
+</html>
