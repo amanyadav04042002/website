@@ -1,0 +1,224 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin:0;
+   }
+
+body{ background-image :url("https://www.drdo.gov.in/sites/default/files/inline-images/drdo.PNG") ;
+    background-attachment: fixed;
+    background-position:center;
+    background-size:cover;
+background-repeat:no-repeat;
+margin-top:90px;
+overflow-y: auto;
+height:auto;
+overflow-x:hidden;
+
+}
+    h1{text-align:center;
+    color:#001C30;
+    text-shadow: 0.3px 0.1px ;
+}
+
+div{
+    padding:10px;
+    margin-top:5px;
+    
+}
+form{
+    width:30rem;
+    height:max-content;
+    border:7px solid #213363;
+    border-radius:15px;
+    margin:0 auto;
+    margin-top:18px;
+    background-color:rgb(250, 243, 240,0.7);
+    box-sizing:border-box;
+    padding:20px;
+   
+}
+
+.centre{
+    width:450px;
+    height:max-content;
+    border:7px solid #213363;
+    border-radius:15px;
+    margin-left: auto ;
+    background-color:rgb(250, 243, 240,0.7);
+    box-sizing:border-box;
+    padding:30px;
+    margin-top:120px;
+  
+  }
+.head{padding:20px;}
+
+
+.button{
+    display:flex;
+    align-items: center;
+  justify-content: center;
+  padding:20px;
+  
+}
+button{background-color:#c32253;
+    border-radius:15%;
+    border:2px solid black;
+    padding:8px;
+
+    color:white;
+    font-weight:bold;
+
+}
+
+button:hover{background-color:#44a832;}
+
+
+label{font-weight:bold;}
+input{width:80%;
+border-radius:2%;
+border: 2px solid #071952;
+box-shadow: 1px 1px;}
+select{width:60%;
+    border-radius:2%;
+    border: 2px solid #071952;
+    box-shadow: 1px 1px;}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    margin:0;
+    background-color: #7895CBc4;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height:60px;
+    width:100%;
+  }
+  
+  .logo img {
+    margin-right: 10px;
+    margin-left:20px;
+  }
+  
+  .nav-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 45px;
+  }
+  
+  .nav-links a {
+    color: #331D2C;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight:bold;
+    padding: 10px 10px; 
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s
+  }
+  
+
+  /* Change the color of links on hover (optional) */
+  .nav-links a:hover {
+    color: white;
+    border-bottom: 2px solid #400E32;
+    color: #fff;
+    background-color: #400E32;
+  }
+
+  .formerror {
+    color: #FE0000;
+    font-size: 14px;
+    text-align: 4px;
+    font-weight: bold;
+    position: relative;
+    left: 10px;
+    text-align: center;
+  
+  }
+  
+  
+  .sidebar {
+    height: 100%;
+    width: 170px;
+    position: absolute;;
+    top: 18;
+    left: 0;
+    background-color: rgba(108, 52, 40);
+    margin:0;
+    overflow-y:auto;
+  }
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0px;
+    
+}
+
+.sidebar li {
+    padding: 12px;
+    margin-left:0;
+    text-align: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff; 
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sidebar a:hover {
+    background-color: #400E32;
+   padding:10px;
+   border-radius: 15%;
+}
+
+
+
+
+@media only screen and (max-width:768px){
+.sidebar{
+  height:3.5rem;
+  width:100%;
+  position:fixed;
+  display:flex;
+  flex-direction: row;
+  overflow-x:auto;
+  overflow-y: auto;
+}
+.items{
+  display:flex;
+  
+}
+.sidebar a{
+  font-size:0.8rem;
+}
+
+form{ margin-top:7rem;}
+.navbar{
+  width:150%;
+  
+}
+  body{overflow:hidden;
+  }
+
+  .outer{
+    display:flex;
+    justify-content:center;
+    width:140vw;
+    margin-top:6rem;
+  }
+}

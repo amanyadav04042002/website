@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centre Data</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    
+    <sec>
+        <div class="navbar">
+            <div class="logo">
+              <img src="https://upload.wikimedia.org/wikipedia/en/6/68/Defence_Research_and_Development_Organisation_Logo.png" alt="Logo" width="50">
+            </div>
+            <div class="nav-links">
+              <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Login">Login</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="sidebar">
+            <ul class="items">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="faculty.html">Faculty</a></li>
+              <li><a href="centre.html">Centre</a></li>
+              <li><a href="topic.html">Topic</a></li>
+              <li><a href="faculty_table.html">Fculty Data</a></li>
+              <li><a href="topic_table.html">Topic Data</a></li>
+              <li><a href="centre_table.html">Centre Data</a></li>
+            </ul>
+        </div>
+        <div class="outer">
+          <form class="centre" action="/myaction.php" name="facultysubmitted" onsubmit="return validateform()" method=" post">
+            <h1 class="head">Centre Information</h1>
+            <div > <label for="1">Centre type</label>
+           
+                <select  id="1" required>
+                    <option value="Select" selected>----Select----</option>
+                    <option value="University">University</option>
+                    <option value="Coaching Institute">Coaching Institute</option>
+                    <option value="School">School</option>
+                    <option value="Online Educator">Online Educator</option>
+                    <option value="Freelancing">Freelancing</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+           <div class="box" id="cname"> <label for="2">Centre Name:</label><span class="formerror"> </span>
+            <input type="text" placeholder="Type Centre Name here" id="2" name="cname" required> </div>
+
+            <div > <label for="4">Centre Address:</label>
+                <input  type="text" placeholder="Write Centre address here" id="4" required> </div>
+             
+            <div class="box"> <label for="3">Centre Id</label>
+            <input type="select" placeholder="Choose Your centre" id="3" required> </div>
+
+          
+
+          
+            <div class="button"><button>Submit</button></div>
+
+            
+
+
+
+          </form>  
+        </div>
+    </sec>
+</body>
+<script src="js1.js"></script>
+</html>
