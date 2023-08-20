@@ -1,0 +1,107 @@
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+body {
+  background-image: url("/drdo.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: auto;
+  height: auto;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  color: #001c30;
+  text-shadow: 0.3px 0.1px;
+}
+
+form > div {
+  padding: 10px;
+  margin-top: 5px;
+}
+
+form {
+  width: 30rem;
+  height: max-content;
+  border: 7px solid #213363;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 18px;
+  background-color: rgba(250, 243, 240, 0.7);
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+
+.centre {
+  width: 450px;
+  border: 7px solid #213363;
+  border-radius: 15px;
+  margin-left: auto;
+  background-color: rgba(250, 243, 240, 0.7);
+  box-sizing: border-box;
+  padding: 30px 0px 10px 30px;
+}
+
+.head {
+  padding: 20px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+button {
+  background-color: #c32253;
+  border-radius: 15%;
+  border: 2px solid black;
+  padding: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #44a832;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 80%;
+  border-radius: 2%;
+  border: 2px solid #071952;
+  box-shadow: 1px 1px;
+  padding: 5px;
+}
+
+
+.formerror {
+  color: #fe0000;
+  font-size: 14px;
+  text-align: 4px;
+  font-weight: bold;
+  position: relative;
+  left: 10px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 982px) {
+  form {
+    width: 80%;
+  }
+  .centre {
+    width: 80%;
+  }
+}

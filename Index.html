@@ -5,40 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CEPTAM-Training</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="/css/style.css">
+    <script>
+        /* JavaScript for the toggleMobileMenu function */
+        function toggleMobileMenu() {
+            var mobileNav = document.getElementById("mobileNavLinks");
+            if (mobileNav.style.display === "block") {
+                mobileNav.style.display = "none";
+            } else {
+                mobileNav.style.display = "block";
+            }
+        }
+    </script>
 </head>
 <body>
-   
-
     <div class="navbar">
         <div class="logo">
-          <img src="https://upload.wikimedia.org/wikipedia/en/6/68/Defence_Research_and_Development_Organisation_Logo.png" alt="Logo" width="50">
+            <img src="logo.png" alt="DRDO Logo" width="50">
         </div>
-    
-        <div class="nav-links">
-          <ul>
+        <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Login">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="mobile-nav-links" id="mobileNavLinks">
+        <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#Login">Login</a></li>
-          </ul>
-        </div>
-      </div>
-    
-
-
-<div class="middle">
-  <div class="container">
-    <h1>Welcome to the Page</h1>
-    <div class="buttons">
-      <a href="/pages/faculty.html"><button class="button" >Faculty</button></a>
-      <a href="/pages/centre.html"><button class="button">Centre</button></a>
-      <a href="/pages/topic.html"><button class="button">Topic</button></a>
+        </ul>
     </div>
-  </div>
-</div>
-
-
-  
-
+    <div class="middle">
+        <div class="container">
+            <h1>Welcome to the Page</h1>
+            <div class="buttons">
+                <a href="faculty.html"><button class="button">Faculty</button></a>
+                <a href="centre.html"><button class="button">Centre</button></a>
+                <a href="topic.html"><button class="button">Topic</button></a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

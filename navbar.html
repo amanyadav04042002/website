@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/navbar.css">
+    <script>
+      /* JavaScript for the toggleMobileMenu function */
+      function toggleMobileMenu() {
+        var mobileNav = document.getElementById("mobileNavLinks");
+        if (mobileNav.style.display === "block") {
+          mobileNav.style.display = "none";
+        } else {
+          mobileNav.style.display = "block";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="Logo" width="50" />
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Login">Login</a></li>
+        </ul>
+      </div>
+      <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <div class="mobile-nav-links" id="mobileNavLinks">
+        <ul>
+          <li class="navbar-links"><a href="index.html">Home</a></li>
+          <li><a href="faculty.html">Faculty</a></li>
+          <li><a href="centre.html">Centre</a></li>
+          <li><a href="topic.html">Topic</a></li>
+          <li><a href="faculty_table.html">Faculty Data</a></li>
+          <li><a href="topic_table.html">Topic Data</a></li>
+          <li><a href="centre_table.html">Centre Data</a></li>
+          <li class="navbar-links"><a href="#about">About</a></li>
+          <li class="navbar-links"><a href="#Login">Login</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sidebar">
+      <ul class="items">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="faculty.html">Faculty</a></li>
+        <li><a href="centre.html">Centre</a></li>
+        <li><a href="topic.html">Topic</a></li>
+        <li><a href="faculty_table.html">Faculty Data</a></li>
+        <li><a href="topic_table.html">Topic Data</a></li>
+        <li><a href="centre_table.html">Centre Data</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

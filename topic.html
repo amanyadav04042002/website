@@ -1,69 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Course Data</title>
-    <link rel="stylesheet" href="form.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="/css/form.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="js1.js"></script>
+  
+  </head>
+  <body>
+    <script src="navbar.js"></script>
     <sec>
-        <div class="navbar">
-            <div class="logo">
-              <img src="https://upload.wikimedia.org/wikipedia/en/6/68/Defence_Research_and_Development_Organisation_Logo.png" alt="Logo" width="50">
-            </div>
-            <div class="nav-links">
-              <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#Login">Login</a></li>
-              </ul>
-            </div>
+      <div id="nav-placeholder"></div>
+      <div class="outer">
+        <form class="topic" name="topicSubmitted" onsubmit="return validateForms()" method="post">
+          <h1>Course Topics</h1>
+          <div class="input">
+            <label for="1">Topic Name:</label><br>
+            <input
+              type="text"
+              placeholder="Type Topic Name here"
+              id="1"
+              required
+            />
           </div>
 
-          <div class="sidebar">
-            <ul class="items">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="/pages/faculty.html">Faculty</a></li>
-              <li><a href="/pages/centre.html">Centre</a></li>
-              <li><a href="/pages/topic.html">Topic</a></li>
-              <li><a href="/pages/faculty_table.html">Fculty Data</a></li>
-              <li><a href="/pages/topic_table.html">Topic Data</a></li>
-              <li><a href="/pages/centre_table.html">Centre Data</a></li>
-            </ul>
-        </div>
-        <div class="outer">
-          <form class="centre">
-            <h1>Course Topics</h1>
-            <div class="input"> <label for="1">Topic Name:</label>
-                <input type="text" placeholder="Type Topic Name here" id="1" required> </div>
+          <div>
+            <label for="4">Topic Id:</label><br />
+            <input
+              type="select"
+              placeholder="Choose Your Topic Id"
+              id="4"
+              required
+            />
+          </div>
 
-                <div> <label for="4">Topic Id</label><br>
-                    <input type="select" placeholder="Choose Your Topic Id" id="4" required> </div>
-                 
-                <div> <label for="2">Subject</label><br>
-                <input type="text" placeholder="Choose your Subject" id="2" required> </div>
+          <div>
+            <label for="2">Subject:</label><br />
+            <input
+              type="text"
+              placeholder="Choose Your Subject"
+              id="2"
+              required
+            />
+          </div>
 
-                <div> <label for="3">Centre Id</label>
-                    <input type="select" placeholder="Choose Your centre" id="3" required> </div>
+          <div id="centreIds">
+            <label for="CentreIds">Centre ID:</label><br>
+            <span class="formerror"></span>
+            <input type="text" name="cid" placeholder="Choose Centre ID" id="CentreIds" required>
+          </div>
+  
 
-                   
-          
-            <div class="button"><button>Submit</button></div>
-
-            
-
-
-
-          </form>  
-        </div>
+          <div class="button"><button>Submit</button></div>
+        </form>
+      </div>
     </sec>
-
-    
-
-
-
-</body>
+  </body>
 </html>
